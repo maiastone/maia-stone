@@ -9,9 +9,9 @@ const About = () => {
         <p className='tagline'>
           Read about what gets me up in the morning and what keeps me up at night.
           <br/>
-          <div className='resume-link'>
+          <p className='resume-link'>
             <a href='./resume' className='resume-button'>view resume</a>
-          </div>
+          </p>
         </p>
       <section className="full card">
           <div className='story-header'>

@@ -10,7 +10,7 @@ export default class ProjectCard extends Component {
     <div className='card' key={project.id}>
     <h2>{project.title}</h2>
     <img className='screenshot' src={project.imgLink}></img>
-    <h3>{project.description}</h3>
+    <p className='description'>{project.description}</p>
     <ul className='tech'>
         {project.techStack.map(function (tech, i) {
           return <li key={i}>{tech}</li>;

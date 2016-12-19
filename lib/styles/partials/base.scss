@@ -27,6 +27,7 @@ h1 {
 }
 
 h2 {
+	text-align: center;
   font-size: 32px;
   padding: 4%;
 }
@@ -75,7 +76,6 @@ a:hover, a:focus {
 
 .nav:hover, .nav:focus {
 	color: #9fe15b;
-	font-size: 14px;
 }
 
 .navLi{
@@ -183,9 +183,8 @@ footer {
 	align-items: center;
 }
 .section-title {
-	margin: 3% 0 10%;
-  padding-left: 15%;
-  font-size: 40px;
+	margin: 3% 0 7%;
+  font-size: 32px;
   background-color: #9fe15b;
   border-bottom: .5px inset gray;
   border-top: .5px inset gray;
@@ -219,6 +218,9 @@ ul li img {
 	margin: 0 25%;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 5px;
+}
+.description {
+	margin: 5%;
 }
 
 .medium-portfolio {
@@ -261,8 +263,8 @@ ul li img {
 
 
 @media screen and (min-width: 600px) {
-	.medium-portfolio {
-		margin-top: 15%;
+	a {
+		font-size: 20px;
 	}
 	h3 {
 		font-size: 42px;
@@ -271,8 +273,8 @@ ul li img {
 		text-align: center;
 		font-size: 50px;
 	}
-	span {
-		font-size: 22px;
+	.medium-portfolio {
+		margin-top: 15%;
 	}
 	.mobile-tag {
 		font-size: 34px;
@@ -280,5 +282,11 @@ ul li img {
 	.tagline {
 		margin-top: 10%;
 		font-size: 26px;
+	}
+	.nav {
+		font-size: 20px;
+	}
+	.resume-button {
+		font-size: 18px;
 	}
 }
