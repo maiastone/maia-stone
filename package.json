@@ -1,7 +1,7 @@
 {
   "name": "react-starter-kit",
   "version": "1.0.0",
-  "description": "A good enough starter kit for a React project, I guess.",
+  "description": "My Personal Portfolio Site.",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -10,14 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/turingschool-examples/react-starter-kit.git"
+    "url": "https://github.com/maiastone/maia-stone"
   },
-  "author": "Steve Kinney",
+  "author": "Maia Stone",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/turingschool-examples/react-starter-kit/issues"
+    "url": "https://github.com/maiastone/maia-stone/issues"
   },
-  "homepage": "https://github.com/turingschool-examples/react-starter-kit",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-core": "^6.7.4",
@@ -44,5 +43,8 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "react-router": "^3.0.0"
   }
 }
