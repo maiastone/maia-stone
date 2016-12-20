@@ -1,6 +1,9 @@
 /* eslint-disable */
 import React from 'react';
 import Header from './Header.jsx';
+import { Link } from 'react-router';
+
+
 
 const About = () => {
   return (
@@ -10,7 +13,7 @@ const About = () => {
           Read about what gets me up in the morning and what keeps me up at night.
           <br/>
           <p className='resume-link'>
-            <a href='./resume' className='resume-button'>view resume</a>
+            <a href='./lib/styles/images/maia-stone.pdf' className='resume-button'>view resume</a>
           </p>
         </p>
       <section className="full card">

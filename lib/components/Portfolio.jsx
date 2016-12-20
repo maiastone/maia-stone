@@ -16,4 +16,5 @@ class Portfolio extends React.Component {
     );
   }
 }
+
 module.exports = Portfolio;

@@ -16,7 +16,7 @@ export default class ProjectCard extends Component {
           return <li key={i}>{tech}</li>;
         })}
     </ul>
-    <h4><a href={project.codeLink} title="GitHub">
+    <h4><a href={project.codeLink} className='card-link' title="GitHub">
           View the code
         </a>
     </h4>
