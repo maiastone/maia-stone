@@ -22,7 +22,7 @@ button {
 
 h1 {
 	font-family: 'Shadows Into Light', sans-serif;
-	font-size: 2em;
+	font-size: 3em;
 	margin-left: 10px;
 }
 
@@ -117,7 +117,6 @@ footer {
 .tagline {
 	width: 70%;
   margin-left: 13%;
-  margin-top: 15%;
   font-size: 20px;
 }
 
@@ -170,24 +169,16 @@ footer {
 
 .header-container {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 8%;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	background-color: #ffffff;
-	border-bottom: .5px inset gray;
-}
-
-.small-header-container {
-	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	background-color: #ffffff;
+	border-bottom: .5px inset gray;
+	padding: 2%;
 }
+
 .section-title {
 	margin: 3% 0 7%;
-  font-size: 32px;
+  font-size: 28px;
   background-color: #9fe15b;
   border-bottom: .5px inset gray;
   border-top: .5px inset gray;
@@ -208,7 +199,7 @@ ul li img {
   transition: .3s;
   border-radius: 5px;
 	background-color: #ffffff;
-	margin: 0% auto 5%;
+	margin: 0 auto 5%;
 	width: 70%;
 }
 
@@ -250,7 +241,6 @@ ul li img {
 .medium {
   width: 30%;
   height: 100px;
-  padding-top: 10px;
 }
 
 .small {
@@ -268,7 +258,6 @@ ul li img {
 	border: 2px solid #9fe15b;
 	font-size: 36px;
 	padding: 10px;
-	width: 75%;
 }
 
 .text {
@@ -276,7 +265,10 @@ ul li img {
 }
 .contact-form {
 	display: block;
-	margin-top: 20%;
+  margin: auto;
+  width: 75%;
+  padding-top: 10%;
+	text-align: center;
 }
 
 
@@ -292,13 +284,11 @@ ul li img {
 		font-size: 50px;
 	}
 	.medium-portfolio {
-		margin-top: 15%;
 	}
 	.mobile-tag {
 		font-size: 34px;
 	}
 	.tagline {
-		margin-top: 10%;
 		font-size: 26px;
 	}
 	.nav {

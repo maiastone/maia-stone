@@ -9,7 +9,6 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className="page-container">
-        <Header />
         <ProjectContainer />
         <Footer />
       </div>

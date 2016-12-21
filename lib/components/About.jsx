@@ -8,7 +8,6 @@ import { Link } from 'react-router';
 const About = () => {
   return (
     <div className="About">
-        <Header />
         <p className='tagline'>
           Read about what gets me up in the morning and what keeps me up at night.
           <br/>

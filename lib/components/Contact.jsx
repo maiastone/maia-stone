@@ -4,7 +4,6 @@ import Header from './Header.jsx';
 const Contact = () => {
   return (
     <div className="Contact">
-      <Header />
       <form className='contact-form'>
         <input className='contact-input'
          placeholder='name'></input>
