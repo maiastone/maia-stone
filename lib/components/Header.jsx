@@ -12,9 +12,8 @@ class Header extends React.Component {
             <nav className='header-container'>
               <h1>Maia Stone</h1>
               <ul>
-                <li className='navLi'><Link to='/' className='nav'>Home</Link></li>
+                <li className='navLi'><Link to='/' className='nav'>Featured Work</Link></li>
                 <li className='navLi'><Link to='/about' className='nav'>About</Link></li>
-                <li className='navLi'><Link to='/contact' className='nav'>Contact</Link></li>
               </ul>
             </nav>
             {this.props.children}

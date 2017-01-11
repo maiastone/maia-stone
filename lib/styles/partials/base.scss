@@ -1,6 +1,12 @@
+html {
+  background: url('/lib/styles/images/aspen.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 body {
-	background-color: #f6f6f6;
 	font-family: 'Open Sans', sans-serif;
 	color: #545454;
 }
@@ -12,12 +18,14 @@ button {
 	background-color: #545454;
 	border-radius: 20px;
 	color: #ffffff;
-	padding: 6px;
+	padding: 10px;
 	font-size: 14px;
 }
 
 .resume-link {
 	text-align: right;
+	margin-right: 15%;
+	margin-bottom: 2%;
 }
 
 h1 {
@@ -27,9 +35,9 @@ h1 {
 }
 
 h2 {
-	text-align: center;
   font-size: 32px;
   padding: 4%;
+	text-align: center;
 }
 
 h3 {
@@ -95,7 +103,6 @@ li {
 	list-style: none;
 	display: inline;
 	padding: 3% 6%;
-	background-color: #f6f6f6;
 }
 
 footer {
@@ -118,6 +125,10 @@ footer {
 	width: 70%;
   margin-left: 13%;
   font-size: 20px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+	transition: .3s;
+	border-radius: 5px;
+	background-color: #ffffff;
 }
 
 .mobile-tag {
@@ -177,11 +188,8 @@ footer {
 }
 
 .section-title {
-	margin: 3% 0 7%;
+	font-family: 'Shadows Into Light', sans-serif;
   font-size: 28px;
-  background-color: #9fe15b;
-  border-bottom: .5px inset gray;
-  border-top: .5px inset gray;
 }
 
 .link-footer {
@@ -200,7 +208,7 @@ ul li img {
   border-radius: 5px;
 	background-color: #ffffff;
 	margin: 0 auto 5%;
-	width: 70%;
+	width: 60%;
 }
 
 .card:hover {
@@ -271,6 +279,24 @@ ul li img {
 	text-align: center;
 }
 
+blockquote {
+  border-left: 7px solid #545454;
+  margin: 1.5em 0;
+  padding: 1.5em 10px;
+	border-radius: 5px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #545454;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
 
 @media screen and (min-width: 600px) {
 	a {

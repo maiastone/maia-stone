@@ -8,12 +8,12 @@ import { Link } from 'react-router';
 const About = () => {
   return (
     <div className="About">
-        <p className='tagline'>
-          Read about what gets me up in the morning and what keeps me up at night.
+        <blockquote className='tagline'>
+          Usually the same things that get me up in the morning, keep me up at night.
           <br/>
-          <p className='resume-link'>
-            <a href='./lib/styles/images/maia-stone.pdf' className='resume-button'>view resume</a>
-          </p>
+        </blockquote>
+        <p className='resume-link'>
+          <a href='./lib/styles/images/maia-stone.pdf' className='resume-button'>view resume</a>
         </p>
       <section className="full card">
           <div className='story-header'>
