@@ -1,14 +1,15 @@
-html {
+/*html {
   background: url('/lib/styles/images/aspen.png') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+}*/
 
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #545454;
+  background-color: #f6f6f6;
 }
 
 button {
@@ -36,7 +37,7 @@ h1 {
 
 h2 {
   font-size: 32px;
-  padding: 4%;
+  padding: 3%;
 	text-align: center;
 }
 
@@ -47,8 +48,7 @@ h3 {
 
 h4 {
 	font-size: 28px;
-	padding: 5%;
-	text-align: center;
+	padding: 2%;
 	color: #9fe15b;
 }
 
@@ -61,6 +61,9 @@ h5 {
 	padding-left: 25%;
 }
 
+.tech {
+	font-size: 12px;
+}
 
 p {
 	line-height: 1.2em;
@@ -102,7 +105,7 @@ ul {
 li {
 	list-style: none;
 	display: inline;
-	padding: 3% 6%;
+	padding: 5% 6%;
 }
 
 footer {
@@ -125,10 +128,6 @@ footer {
 	width: 70%;
   margin-left: 13%;
   font-size: 20px;
-	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-	transition: .3s;
-	border-radius: 5px;
-	background-color: #ffffff;
 }
 
 .mobile-tag {
@@ -208,7 +207,7 @@ ul li img {
   border-radius: 5px;
 	background-color: #ffffff;
 	margin: 0 auto 5%;
-	width: 60%;
+	width: 85%;
 }
 
 .card:hover {
@@ -216,13 +215,16 @@ ul li img {
 }
 
 .screenshot {
-	width: 50%;
-	margin: 0 25%;
+	width: 80%;
+	margin-left: 10%;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 5px;
 }
-.description {
-	margin: 5%;
+
+.card-text {
+  display: block;
+  width: 90%;
+  margin: auto;
 }
 
 .medium-portfolio {
@@ -247,9 +249,9 @@ ul li img {
 }
 
 .card-flex-container {
-  display: flex;
-  justify-content: center;
+	width: 100%;
 }
+
 .medium {
   width: 30%;
   height: 100px;
@@ -303,17 +305,34 @@ blockquote p {
 }
 
 @media screen and (min-width: 600px) {
-	a {
-		font-size: 20px;
+	.card-flex-container {
+		display: flex;
+	  justify-content: center;
+	}
+  .card-text {
+    display: block;
+    width: 50%;
+  }
+	.card {
+		width: 40%;
+	}
+
+  .screenshot {
+		height: 50%;
+		width: 40%;
+  	border: 1px solid rgba(0,0,0,.2);
+  	border-radius: 5px;
+		margin: 0 0 2% 2%;
+  }
+	.project-card-container {
+		display: flex;
+		flex-wrap: wrap;
 	}
 	h3 {
 		font-size: 42px;
 	}
 	h4 {
-		text-align: center;
-		font-size: 50px;
-	}
-	.medium-portfolio {
+		font-size: 18px;
 	}
 	.mobile-tag {
 		font-size: 34px;
