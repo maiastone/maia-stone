@@ -67,6 +67,7 @@ h5 {
 span {
 	font-weight: bold;
 	color: #9fe15b;
+	font-size: 1.2em;
 
 }
 p {
@@ -221,7 +222,7 @@ ul li img {
 .screenshot {
 	width: 80%;
 	margin-left: 10%;
-	margin-top: 2%;
+	margin-top: 5%;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 5px;
 }
@@ -229,7 +230,7 @@ ul li img {
 .card-text {
   display: block;
   width: 90%;
-  margin: auto;
+  margin: 5% auto;
 }
 
 .medium-portfolio {
@@ -308,9 +309,7 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
-//TODO 600-800 media query .card {width: 60%;} h2 { background-color: gainsboro;}
 
-/*@media screen and (min-width )*/
 
 @media screen and (min-width: 600px) {
 	.card-flex-container {
@@ -329,7 +328,7 @@ blockquote p {
 		width: 40%;
   	border: 1px solid rgba(0,0,0,.2);
   	border-radius: 5px;
-		margin: 2%;
+		margin: 5% 2% 2% 2%;
   }
 	.project-card-container {
 		display: flex;
