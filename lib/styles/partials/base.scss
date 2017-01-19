@@ -9,7 +9,7 @@
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #545454;
-  background-color: #f6f6f6;
+  background-color: lighten(#545454, 60%);
 }
 
 button {
@@ -39,8 +39,8 @@ h2 {
   font-size: 32px;
   padding: 3%;
 	text-align: center;
+	background-color: gainsboro;
 }
-
 h3 {
 	font-size: 26px;
 	padding: 2%;
@@ -64,7 +64,11 @@ h5 {
 .tech {
 	font-size: 12px;
 }
+span {
+	font-weight: bold;
+	color: #9fe15b;
 
+}
 p {
 	line-height: 1.2em;
 	font-family: 'Raleway', sans-serif;
@@ -105,7 +109,7 @@ ul {
 li {
 	list-style: none;
 	display: inline;
-	padding: 5% 6%;
+	padding: 6% 6%;
 }
 
 footer {
@@ -217,6 +221,7 @@ ul li img {
 .screenshot {
 	width: 80%;
 	margin-left: 10%;
+	margin-top: 2%;
 	border: 1px solid rgba(0,0,0,.2);
 	border-radius: 5px;
 }
@@ -303,6 +308,9 @@ blockquote:before {
 blockquote p {
   display: inline;
 }
+//TODO 600-800 media query .card {width: 60%;} h2 { background-color: gainsboro;}
+
+/*@media screen and (min-width )*/
 
 @media screen and (min-width: 600px) {
 	.card-flex-container {
@@ -314,15 +322,14 @@ blockquote p {
     width: 50%;
   }
 	.card {
-		width: 40%;
+		width: 60%;
 	}
-
   .screenshot {
 		height: 50%;
 		width: 40%;
   	border: 1px solid rgba(0,0,0,.2);
   	border-radius: 5px;
-		margin: 0 0 2% 2%;
+		margin: 2%;
   }
 	.project-card-container {
 		display: flex;
@@ -345,5 +352,10 @@ blockquote p {
 	}
 	.resume-button {
 		font-size: 18px;
+	}
+}
+@media screen and (min-width: 800px) {
+	.card {
+		width: 40%;
 	}
 }
