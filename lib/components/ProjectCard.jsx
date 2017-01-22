@@ -24,11 +24,11 @@ export default class ProjectCard extends Component {
             </a>
           </h4>
           <h4>
-            <a href={project.codeLink} className='card-link' title="Live">
+            {project.liveLink.length > 1 ?
+            <a href={project.liveLink} className='card-link' title="Live">
                 See it live
-            </a>
+            </a> : <p></p>}
           </h4>
-          <h4>{project.liveLink}</h4>
         </div>
       </div>
     </div>

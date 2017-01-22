@@ -9,11 +9,11 @@ const About = () => {
   return (
     <div className="About">
         <blockquote className='tagline'>
-          Usually the same things that get me up in the morning, keep me up at night.
+          Read about what gets me up early in the morning, and keeps me up late at night.
           <br/>
         </blockquote>
         <p className='resume-link'>
-          <a href='./lib/styles/images/maia-stone.pdf' className='resume-button'>view resume</a>
+          <a href='./lib/styles/images/Maia-Stone-2017.pdf' className='resume-button'>view resume</a>
         </p>
       <section className="full card">
           <div className='story-header'>

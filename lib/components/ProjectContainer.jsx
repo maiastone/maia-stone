@@ -9,7 +9,7 @@ class ProjectContainer extends Component {
   render() {
       return (
         <div className='project-container'>
-          <blockquote className='tagline'>Front end developer: crafting code that brings new ideas and products to life</blockquote>
+          <blockquote className='tagline'>Front end developer: crafts code that brings new ideas and products to life.</blockquote>
           <ProjectCard />
         </div>
       );
