@@ -9,8 +9,7 @@ class ProjectContainer extends Component {
   render() {
       return (
         <div className='project-container'>
-          <p className='tagline'>Front end developer: crafting code that brings new ideas and products to life</p>
-          <h2 className="section-title">Featured Work</h2>
+          <blockquote className='tagline'>Front end developer: crafts code that brings new ideas and products to life.</blockquote>
           <ProjectCard />
         </div>
       );
