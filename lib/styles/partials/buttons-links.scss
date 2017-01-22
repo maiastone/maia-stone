@@ -24,12 +24,12 @@ a {
          transform-origin: bottom right;
          transition: transform 0.5s;
      }
-     &:hover {
-         &:after {
-             transform-origin: bottom left;
-             transform: scaleX(1);
-         }
+  &:hover {
+     &:after {
+         transform-origin: bottom left;
+         transform: scaleX(1);
      }
+ 	}
 }
 
 button {
