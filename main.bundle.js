@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/public/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -8211,7 +8211,7 @@
 	    { history: _reactRouter.browserHistory },
 	    React.createElement(
 	        _reactRouter.Route,
-	        { path: '/', component: _Header2.default },
+	        { path: '/public', component: _Header2.default },
 	        React.createElement(_reactRouter.IndexRoute, { component: _Portfolio2.default }),
 	        React.createElement(_reactRouter.Route, { path: 'about', component: _About2.default })
 	    )
