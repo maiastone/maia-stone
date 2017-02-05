@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "prod": "NODE_ENV=production node server.js",
-    "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress"
+    "postinstall": "webpack -p --config webpack.prod.config.js --progress"
   },
   "repository": {
     "type": "git",
@@ -42,6 +42,7 @@
     "react-dom": "^15.1.0",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
+    "webpack": "^1.14.0",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
