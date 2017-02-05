@@ -1,12 +1,15 @@
+const path = require('path')
+const webpack = require('webpack')
+
 module.exports = {
   entry: {
     main: ['babel-polyfill', './lib/index.js'],
     test: ['babel-polyfill', 'mocha!./test/index.js'],
   },
   output: {
-    path: __dirname,
-    publicPath: '/',
-    filename: '[name].bundle.js',
+    path: path.join(__dirname, 'public'),
+    filename: 'bundle.js',
+    publicPath: '/public/'
   },
   module: {
     loaders: [
