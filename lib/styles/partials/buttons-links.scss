@@ -38,6 +38,11 @@ footer a {
 		height: 0;
 		transform: none;
 	}
+	&:hover {
+		 &:after {
+				 transform: none;
+		 }
+	}
 }
 
 button {
