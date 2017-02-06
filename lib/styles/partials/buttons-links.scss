@@ -1,9 +1,8 @@
 a {
-	font-size: 18px;
+	font-size: 12px;
 	color: black;
   position: relative;
   text-decoration: none;
-  line-height: 24px;
   &:before, &:after {
     content: '';
     position: absolute;
@@ -32,7 +31,7 @@ a {
  	}
 }
 
-footer a {
+.card-link, footer a {
 	text-decoration: none;
 	&:after {
 		height: 0;
@@ -68,4 +67,26 @@ button {
 	text-align: right;
 	margin-right: 15%;
 	margin-bottom: 2%;
+}
+
+.card-link {
+	border: .5px solid gray;
+	padding: 7px;
+	line-height: 3em;
+	border-radius: 5px;
+	&:hover {
+		transition: 1s;
+		background-color: #9dfbd3;
+	}
+}
+
+#name {
+	&:after {
+		transform: scaleX(0);
+	}
+	&:hover {
+     &:after {
+        transform: scaleX(0);
+     }
+ 	}
 }

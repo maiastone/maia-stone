@@ -48,7 +48,7 @@ const About = () => {
             <img className='story' src="./lib/styles/images/232-wink.svg"></img>
             <h1 className="font">The fun.</h1>
           </div>
-          <p>When I'm not writing code, you can find me in the yard with my family, and two high energy, Spanish Water Dogs.  We relax in the <span>moutains</span>, and travel as much as we can.  I love yoga, knitting, sewing, and photography.
+          <p>When I'm not writing code, you can find me in the yard with my family, and two high energy, Spanish Water Dogs.  We relax in the <span>mountains</span>, and travel as much as possible.  I love yoga, knitting, sewing, and photography.
           </p>
       </section>
     </div>

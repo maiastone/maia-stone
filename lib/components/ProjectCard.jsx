@@ -18,17 +18,19 @@ export default class ProjectCard extends Component {
               return <li key={i}>{tech}</li>;
             })}
             </ul>
-          <h4>
-            <a href={project.codeLink} className='card-link' title="GitHub">
-                View the code
-            </a>
-          </h4>
-          <h4>
-            {project.liveLink.length > 1 ?
-            <a href={project.liveLink} className='card-link' title="Live">
-                See it live
-            </a> : <p></p>}
-          </h4>
+          <div className='link'>
+            <h4>
+              <a href={project.codeLink} className='card-link' title="GitHub">
+                  View Code
+              </a>
+            </h4>
+            <h4>
+              {project.liveLink.length > 1 ?
+              <a href={project.liveLink} className='card-link' title="Live">
+                  Visit Live
+              </a> : <p></p>}
+            </h4>
+          </div>
         </div>
       </div>
     </div>
