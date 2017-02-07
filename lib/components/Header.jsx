@@ -17,8 +17,22 @@ class Header extends React.Component {
 
               <div className='right-side-header'>
                 <ul>
-                  <li className='navLi'><Link to='/' className='nav'>Featured Work</Link></li>
-                  <li className='navLi'><Link to='/about' className='nav'>About</Link></li>
+
+                  <li className='navLi'>
+                    <Link to='/'
+                      className='nav'
+                      activeClassName='active'>
+                      Featured Work
+                    </Link>
+                  </li>
+
+                  <li className='navLi'>
+                    <Link to='/about'
+                      className='nav'
+                      activeClassName='active'>
+                      About
+                    </Link>
+                  </li>
                 </ul>
               </div>
 

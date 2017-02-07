@@ -1,0 +1,49 @@
+.resume {
+  margin-top: 5%;
+  padding: 3%;
+  background-color: black;
+  color: white;
+  ul {
+    justify-content: flex-start;
+  }
+  li {
+    padding: 2%;
+  }
+}
+
+.resume-header {
+  text-align: right;
+  font-spacing: extended;
+  p {
+    text-transform: uppercase;
+  }
+}
+.contact-info, .experience, .volunteer, .education {
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+}
+
+.resume-section-title {
+  border-radius: 0px;
+  padding: 1%;
+}
+
+h3 {
+  font-size: 22px;
+  padding: 2%;
+  text-transform: uppercase;
+}
+
+h4 {
+  padding: 1% 2%;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience, .volunteer p {
+  font-size: 16px;
+}

@@ -7,14 +7,14 @@
 	.project-card-container {
 		margin-top: 15%;
 	}
+	.resume {
+	  margin-top: 5%;
+	}
 }
 
 @media screen and (min-width: 600px) {
 	h1 {
 		font-size: 3em;
-	}
-	h3 {
-		font-size: 42px;
 	}
 	h4 {
 		font-size: 18px;
@@ -29,7 +29,7 @@
   }
 	.full {
 		width: 80%;
-		margin-top: 20%;
+		margin-top: 15%;
 	}
   .screenshot {
 		height: 50%;
@@ -53,6 +53,9 @@
 	.right-side-header {
 		width: 50%;
 	}
+	.resume {
+	  margin-top: 5%;
+	}
 }
 @media screen and (min-width: 800px) {
 	.card {
@@ -70,8 +73,14 @@
 	.right-side-header {
 		width: 40%;
 	}
+	.nav {
+		font-size: 28px;
+	}
 	.navLi {
 		font-size: 36px;
+	}
+	.resume {
+	  margin-top: 5%;
 	}
 }
 
@@ -90,5 +99,8 @@
 	}
 	.right-side-header {
 		width: 25%;
+	}
+	.resume {
+	  margin-top: 5%;
 	}
 }
