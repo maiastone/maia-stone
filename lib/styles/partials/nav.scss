@@ -12,6 +12,10 @@
 
 .nav {
 	font-size: 14px;
+  &:hover {
+    color: $highlight-color;
+    transition: .5s;
+  }
 }
 
 .navLi{

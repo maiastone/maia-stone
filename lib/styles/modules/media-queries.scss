@@ -26,10 +26,6 @@
   	border-radius: 5px;
 		margin: 5% 0% 4% 4%;
   }
-	.project-card-container {
-		display: flex;
-		flex-wrap: wrap;
-	}
 	.mobile-tag {
 		font-size: 34px;
 	}
@@ -44,9 +40,6 @@
 	}
 }
 @media screen and (min-width: 800px) {
-	p {
-		font-size: 14px;
-	}
 	.card {
 		width: 40%;
 	}

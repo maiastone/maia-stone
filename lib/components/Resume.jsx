@@ -6,7 +6,7 @@ class Resume extends React.Component {
 
   render() {
     return (
-      <a href='./lib/styles/images/maia-stone.pdf'></a>
+      <button><a href='./lib/styles/images/maia-stone.pdf'></a></button>
     );
   }
 }

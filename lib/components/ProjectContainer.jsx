@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ProjectCard from './ProjectCard.jsx';
-import projects from '../projects';
 
 
 class ProjectContainer extends Component {
@@ -8,8 +7,7 @@ class ProjectContainer extends Component {
 
   render() {
       return (
-        <div className='project-container'>
-          <blockquote className='tagline'>Front end developer: crafts code that brings new ideas and products to life.</blockquote>
+        <div>
           <ProjectCard />
         </div>
       );

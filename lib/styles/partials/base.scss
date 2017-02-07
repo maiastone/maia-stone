@@ -1,11 +1,11 @@
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: $dark-highlight;
-  background-image: linear-gradient(#9dfbd3, #90e5d5, #70cfdd, #6dabdd, #7878c5);
+  background-color: #f6f6f6;
 }
 
 h1 {
-	font-family: 'Shadows Into Light', sans-serif;
+	font-family: 'Cinzel Decorative', cursive;
 	font-size: 2.5em;
 	margin-left: 10px;
 	color: $highlight-color;
@@ -39,35 +39,12 @@ h5 {
 p {
 	font-size: 18px;
 	line-height: 1.2em;
-	font-family: 'Raleway', sans-serif;
 	padding: 2%;
 }
 
 span {
 	font-weight: bold;
 	color: $highlight-color;
-	font-size: 1.2em;
-}
-
-blockquote {
-  border-left: 7px solid $dark-highlight;
-  margin: 1.5em 0;
-  padding: 1.5em 10px;
-	border-radius: 5px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-
-blockquote:before {
-  color: $dark-highlight;
-  content: open-quote;
-  font-size: 3em;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-  vertical-align: -0.4em;
-}
-
-blockquote p {
-  display: inline;
 }
 
 ul {
@@ -126,7 +103,8 @@ footer {
 }
 
 .font {
-	font-size: 2.5em;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
 	padding-left: 2%;
 	color: $highlight-color;
 }
@@ -134,7 +112,7 @@ footer {
 .story-header {
 	display: flex;
 	justify-content: flex-start;
-	padding: 5%;
+	padding: 1%;
 }
 
 .section-title {
