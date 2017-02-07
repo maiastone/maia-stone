@@ -3,50 +3,12 @@ a {
 	color: black;
   position: relative;
   text-decoration: none;
-  &:before, &:after {
-    content: '';
-    position: absolute;
-    transition: transform 1s ease;
-  }
-}
-
-a {
-	&:after {
-         content:'';
-         position: absolute;
-         width: 100%;
-         height: 1px;
-         bottom: 0;
-         left: 0;
-         background-color: $highlight-color;
-         transform: scaleX(0);
-         transform-origin: bottom right;
-         transition: transform .8s;
-     }
-  &:hover {
-     &:after {
-         transform-origin: bottom left;
-         transform: scaleX(1);
-     }
- 	}
-}
-
-.card-link, footer a {
-	text-decoration: none;
-	&:after {
-		height: 0;
-		transform: none;
-	}
-	&:hover {
-		 &:after {
-				 transform: none;
-		 }
-	}
 }
 
 button {
 	text-align: center;
 }
+
 .resume-button {
 	background-color: #545454;
 	border-radius: 20px;
@@ -56,10 +18,6 @@ button {
 	transition: .3s;
 	&:hover {
 		color: $highlight-color;
-		background-color: white;
-	}
-	&:after {
-		visibility: hidden;
 	}
 }
 
@@ -70,23 +28,9 @@ button {
 }
 
 .card-link {
-	border: .5px solid gray;
-	padding: 7px;
-	line-height: 3em;
-	border-radius: 5px;
+	padding: 6px;
 	&:hover {
-		transition: 1s;
-		background-color: #9dfbd3;
+		transition: .5s;
+		color: darken(#9dfbd3, 40%);
 	}
-}
-
-#name {
-	&:after {
-		transform: scaleX(0);
-	}
-	&:hover {
-     &:after {
-        transform: scaleX(0);
-     }
- 	}
 }

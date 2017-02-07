@@ -10,11 +10,18 @@ class Header extends React.Component {
     return (
           <div className='test'>
             <nav className='header-container'>
-              <Link to='/' id='name'><h1>Maia Stone</h1></Link>
-              <ul>
-                <li className='navLi'><Link to='/' className='nav'>Featured Work</Link></li>
-                <li className='navLi'><Link to='/about' className='nav'>About</Link></li>
-              </ul>
+
+              <div className='left-side-header'>
+                <Link to='/' id='name'><h1>Maia Stone</h1></Link>
+              </div>
+
+              <div className='right-side-header'>
+                <ul>
+                  <li className='navLi'><Link to='/' className='nav'>Featured Work</Link></li>
+                  <li className='navLi'><Link to='/about' className='nav'>About</Link></li>
+                </ul>
+              </div>
+
             </nav>
             {this.props.children}
           </div>

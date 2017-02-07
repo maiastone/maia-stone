@@ -12176,33 +12176,41 @@
 	          'nav',
 	          { className: 'header-container' },
 	          _react2.default.createElement(
-	            _reactRouter.Link,
-	            { to: '/', id: 'name' },
+	            'div',
+	            { className: 'left-side-header' },
 	            _react2.default.createElement(
-	              'h1',
-	              null,
-	              'Maia Stone'
+	              _reactRouter.Link,
+	              { to: '/', id: 'name' },
+	              _react2.default.createElement(
+	                'h1',
+	                null,
+	                'Maia Stone'
+	              )
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'ul',
-	            null,
+	            'div',
+	            { className: 'right-side-header' },
 	            _react2.default.createElement(
-	              'li',
-	              { className: 'navLi' },
+	              'ul',
+	              null,
 	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/', className: 'nav' },
-	                'Featured Work'
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              { className: 'navLi' },
+	                'li',
+	                { className: 'navLi' },
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/', className: 'nav' },
+	                  'Featured Work'
+	                )
+	              ),
 	              _react2.default.createElement(
-	                _reactRouter.Link,
-	                { to: '/about', className: 'nav' },
-	                'About'
+	                'li',
+	                { className: 'navLi' },
+	                _react2.default.createElement(
+	                  _reactRouter.Link,
+	                  { to: '/about', className: 'nav' },
+	                  'About'
+	                )
 	              )
 	            )
 	          )
@@ -17175,10 +17183,6 @@
 
 	var _ProjectCard2 = _interopRequireDefault(_ProjectCard);
 
-	var _projects = __webpack_require__(389);
-
-	var _projects2 = _interopRequireDefault(_projects);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -17201,12 +17205,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { className: 'project-container' },
-	        _react2.default.createElement(
-	          'blockquote',
-	          { className: 'tagline' },
-	          'Front end developer: crafts code that brings new ideas and products to life.'
-	        ),
+	        null,
 	        _react2.default.createElement(_ProjectCard2.default, null)
 	      );
 	    }
@@ -17367,14 +17366,6 @@
 	  techStack: ['JavaScript', 'React', 'Firebase'],
 	  codeLink: 'https://github.com/maiastone/chat-app',
 	  liveLink: 'https://chat-app-d59cd.firebaseapp.com/'
-	}, {
-	  id: 5,
-	  imgLink: './lib/styles/images/2DoList.png',
-	  title: '2Do List',
-	  description: 'This project took a prior project, IdeaBox, and pivoted it over to 2DoBox. We used webpack as our build tool, is fully accessibile, utilizes Sass, and were evaluated on user interface,  Sass, and testing.',
-	  techStack: ['JavaScript', 'jQuery', 'Sass'],
-	  codeLink: 'https://github.com/maiastone/2DoBox',
-	  liveLink: ''
 	}];
 
 	module.exports = projects;
@@ -17397,91 +17388,26 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
+	var _Resume = __webpack_require__(391);
+
+	var _Resume2 = _interopRequireDefault(_Resume);
+
 	var _reactRouter = __webpack_require__(331);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/* eslint-disable */
 	var About = function About() {
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'About' },
 	    _react2.default.createElement(
-	      'blockquote',
-	      { className: 'tagline' },
-	      'Read about what gets me up early in the morning, and keeps me up late at night.',
-	      _react2.default.createElement('br', null)
-	    ),
-	    _react2.default.createElement(
-	      'p',
-	      { className: 'resume-link' },
-	      _react2.default.createElement(
-	        'a',
-	        { href: './lib/styles/images/Maia-Stone-2017.pdf', className: 'resume-button' },
-	        'view resume'
-	      )
-	    ),
-	    _react2.default.createElement(
 	      'section',
 	      { className: 'full card' },
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'story-header' },
-	        _react2.default.createElement('img', { className: 'story', src: './lib/styles/images/136-zoom-in.svg' }),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'font' },
-	          'The details'
-	        )
-	      ),
-	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'It\'s the satisfaction from finding the missing semicolon, or the penny that ties out the financial statements.  It',
-	        "'",
-	        's the complicated process required to setup a code base, or a chart of accounts.  It all stems from a solid comprehension of the big picture, but a willingness to dig deep and ',
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'apply a technical skill to solve a problem.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'story-header' },
-	        _react2.default.createElement('img', { className: 'story', src: './lib/styles/images/223-man-woman.svg' }),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'font' },
-	          'The people.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'Beyond the code, it\'s about creating remarkable and smooth digital experiences for ',
-	        _react2.default.createElement(
-	          'span',
-	          null,
-	          'intentional user groups'
-	        ),
-	        '.  It',
-	        "'",
-	        's not unlike making financial maintenance easier for people by providing clear, concise, financially accurate data.'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'story-header' },
-	        _react2.default.createElement('img', { className: 'story', src: './lib/styles/images/176-airplane.svg' }),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'font' },
-	          'The journey.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'I\'ve taken the road less traveled, as an entrepreneur, but I\'ve also climbed the corporate ladder.  I',
+	        'I\'ve taken the road less traveled, as an entrepreneur, but I\'ve also climbed the corporate ladder. I',
 	        "'",
 	        've ',
 	        _react2.default.createElement(
@@ -17489,7 +17415,7 @@
 	          null,
 	          'built a company'
 	        ),
-	        ' from the ground up.  My husband and I ',
+	        ' from the ground up. My husband and I ',
 	        _react2.default.createElement(
 	          'span',
 	          null,
@@ -17504,50 +17430,27 @@
 	        '.'
 	      ),
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'story-header' },
-	        _react2.default.createElement('img', { className: 'story', src: './lib/styles/images/490-svg.svg' }),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'font' },
-	          'The spark.'
-	        )
-	      ),
-	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'One of the greatest joys is to see that magic glow in a child\'s eye.  The best twinkles are of course ',
+	        'One of my greatest joys is to see that magic glow in a child\'s eye. The best twinkles are of course ',
 	        _react2.default.createElement(
 	          'span',
 	          null,
 	          'my two kids radiant eyes staring back at me'
 	        ),
-	        ' and pushing me to be a better person, and a role model.  The nonprofit I cofounded, MindSpark, which has been running tinkering programs in schools and libraries for over five years, also strives to ignite an intellectual spark in kids ages 5-15.'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'story-header' },
-	        _react2.default.createElement('img', { className: 'story', src: './lib/styles/images/232-wink.svg' }),
-	        _react2.default.createElement(
-	          'h1',
-	          { className: 'font' },
-	          'The fun.'
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'p',
-	        null,
-	        'When I\'m not writing code, you can find me in the yard with my family, and two high energy, Spanish Water Dogs.  We relax in the ',
+	        ' and pushing me to be a better person, and a role model. When I\'m not writing code, you can find me in the yard with my family, and two high energy, Spanish Water Dogs. We relax in the ',
 	        _react2.default.createElement(
 	          'span',
 	          null,
 	          'mountains'
 	        ),
-	        ', and travel as much as possible.  I love yoga, knitting, sewing, and photography.'
+	        ', and travel as much as possible. I love yoga, knitting, sewing, and photography.'
 	      )
-	    )
+	    ),
+	    _react2.default.createElement(_Resume2.default, null)
 	  );
-	}; /* eslint-disable */
+	};
+
 	exports.default = About;
 
 /***/ },
@@ -17582,7 +17485,7 @@
 	  _createClass(Resume, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('a', { href: './lib/styles/images/maia-stone.pdf' });
+	      return _react2.default.createElement('div', null);
 	    }
 	  }]);
 
@@ -17626,7 +17529,7 @@
 
 
 	// module
-	exports.push([module.id, "@charset \"UTF-8\";\n/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: 'Open Sans', sans-serif;\n  color: #545454;\n  background-image: linear-gradient(#9dfbd3, #90e5d5, #70cfdd, #6dabdd, #7878c5); }\n\nh1 {\n  font-family: 'Shadows Into Light', sans-serif;\n  font-size: 2.5em;\n  margin-left: 10px;\n  color: blue; }\n\nh2 {\n  font-size: 30px;\n  padding: 3%;\n  text-align: center;\n  background-color: #545454;\n  color: #ffffff;\n  border-radius: 5px 5px 0 0; }\n\nh3 {\n  font-size: 26px;\n  padding: 2%; }\n\nh4 {\n  font-size: 28px;\n  padding: 2%;\n  color: blue; }\n\nh5 {\n  font-size: 16px;\n  padding-left: 25%; }\n\np {\n  font-size: 18px;\n  line-height: 1.2em;\n  font-family: 'Raleway', sans-serif;\n  padding: 2%; }\n\nspan {\n  font-weight: bold;\n  color: blue;\n  font-size: 1.2em; }\n\nblockquote {\n  border-left: 7px solid #545454;\n  margin: 1.5em 0;\n  padding: 1.5em 10px;\n  border-radius: 5px;\n  quotes: \"\\201C\" \"\\201D\" \"\\2018\" \"\\2019\"; }\n\nblockquote:before {\n  color: #545454;\n  content: open-quote;\n  font-size: 3em;\n  line-height: 0.1em;\n  margin-right: 0.25em;\n  vertical-align: -0.4em; }\n\nblockquote p {\n  display: inline; }\n\nul {\n  display: flex;\n  justify-content: center; }\n\nli {\n  list-style: none;\n  display: inline;\n  padding: 5% 6%; }\n\nul li img {\n  width: 50px;\n  height: 50px;\n  border-radius: 5px; }\n\nfooter {\n  position: fixed;\n  padding: 1%;\n  bottom: 0;\n  z-index: 2;\n  width: 100%;\n  height: 5%;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  background-color: #ffffff; }\n  footer img {\n    width: 25px; }\n\n.tech {\n  font-size: 12px;\n  background-color: gray;\n  color: white;\n  margin-top: 5px;\n  margin-bottom: 10px; }\n\n.tagline {\n  width: 70%;\n  margin-left: 13%;\n  font-size: 20px; }\n\n.mobile-tag {\n  font-size: 26px; }\n\n.story {\n  height: 40px; }\n\n.font {\n  font-size: 2.5em;\n  padding-left: 2%;\n  color: blue; }\n\n.story-header {\n  display: flex;\n  justify-content: flex-start;\n  padding: 5%; }\n\n.section-title {\n  font-family: 'Shadows Into Light', sans-serif;\n  font-size: 28px; }\n\n.link {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center; }\n\na {\n  font-size: 12px;\n  color: black;\n  position: relative;\n  text-decoration: none; }\n  a:before, a:after {\n    content: '';\n    position: absolute;\n    transition: transform 1s ease; }\n\na:after {\n  content: '';\n  position: absolute;\n  width: 100%;\n  height: 1px;\n  bottom: 0;\n  left: 0;\n  background-color: blue;\n  transform: scaleX(0);\n  transform-origin: bottom right;\n  transition: transform .8s; }\n\na:hover:after {\n  transform-origin: bottom left;\n  transform: scaleX(1); }\n\n.card-link, footer a {\n  text-decoration: none; }\n  .card-link:after, footer a:after {\n    height: 0;\n    transform: none; }\n  .card-link:hover:after, footer a:hover:after {\n    transform: none; }\n\nbutton {\n  text-align: center; }\n\n.resume-button {\n  background-color: #545454;\n  border-radius: 20px;\n  color: #ffffff;\n  padding: 10px;\n  font-size: 14px;\n  transition: .3s; }\n  .resume-button:hover {\n    color: blue;\n    background-color: white; }\n  .resume-button:after {\n    visibility: hidden; }\n\n.resume-link {\n  text-align: right;\n  margin-right: 15%;\n  margin-bottom: 2%; }\n\n.card-link {\n  border: .5px solid gray;\n  padding: 7px;\n  line-height: 3em;\n  border-radius: 5px; }\n  .card-link:hover {\n    transition: 1s;\n    background-color: #9dfbd3; }\n\n#name:after {\n  transform: scaleX(0); }\n\n#name:hover:after {\n  transform: scaleX(0); }\n\n.card-flex-container {\n  width: 100%;\n  padding-bottom: 1px; }\n\n.card {\n  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);\n  transition: .3s;\n  border-radius: 5px;\n  background-color: #ffffff;\n  margin: 0 auto 5%;\n  width: 85%; }\n\n.card:hover {\n  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.2); }\n\n.screenshot {\n  width: 80%;\n  margin-left: 10%;\n  margin-top: 5%;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 5px; }\n\n.card-text {\n  display: block;\n  width: 90%;\n  margin: 5% auto; }\n\n.project-container {\n  padding-bottom: 10%; }\n\n.header-container {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  background-color: #ffffff;\n  border-bottom: .5px inset gray;\n  padding: 2%; }\n\n.link-footer {\n  margin-bottom: 40px; }\n\n.responsive-menu {\n  display: none; }\n\n.expand {\n  display: block !important; }\n\n.nav {\n  font-size: 14px; }\n\n.navLi {\n  list-style: none;\n  display: inline;\n  background-color: #ffffff;\n  padding: 10px; }\n\n@media screen and (min-width: 600px) {\n  h1 {\n    font-size: 3em; }\n  h3 {\n    font-size: 42px; }\n  h4 {\n    font-size: 18px; }\n  .card-flex-container {\n    display: flex;\n    justify-content: center; }\n  .card-text {\n    display: block;\n    width: 50%; }\n  .full {\n    width: 80%; }\n  .screenshot {\n    height: 50%;\n    width: 40%;\n    border: 1px solid rgba(0, 0, 0, 0.2);\n    border-radius: 5px;\n    margin: 5% 0% 4% 4%; }\n  .project-card-container {\n    display: flex;\n    flex-wrap: wrap; }\n  .mobile-tag {\n    font-size: 34px; }\n  .tagline {\n    font-size: 26px; }\n  .nav {\n    font-size: 20px; }\n  .resume-button {\n    font-size: 18px; } }\n\n@media screen and (min-width: 800px) {\n  p {\n    font-size: 18px; }\n  .card {\n    width: 40%; }\n  .full {\n    width: 80%; } }\n\n@media screen and (min-width: 1300px) {\n  p {\n    font-size: 24px; }\n  li {\n    font-size: 18px; } }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: 'Roboto', sans-serif;\n  color: #545454;\n  background-color: #f6f6f6; }\n\nh1 {\n  font-family: 'Cinzel Decorative', cursive;\n  font-size: 2.5em;\n  margin-left: 10px;\n  color: #13b592; }\n\nh2 {\n  font-size: 30px;\n  padding: 3%;\n  text-align: center;\n  background-color: #545454;\n  color: #ffffff;\n  border-radius: 5px 5px 0 0; }\n\nh3 {\n  font-size: 26px;\n  padding: 2%; }\n\nh4 {\n  font-size: 28px;\n  color: #13b592; }\n\nh5 {\n  font-size: 16px;\n  padding-left: 25%; }\n\np {\n  font-size: 18px;\n  line-height: 1.2em;\n  padding: 2%; }\n\nspan {\n  font-weight: bold;\n  color: #13b592; }\n\nul {\n  display: flex;\n  justify-content: center; }\n\nli {\n  list-style: none;\n  display: inline;\n  padding: 5% 6%; }\n\nul li img {\n  width: 50px;\n  height: 50px;\n  border-radius: 5px; }\n\nfooter {\n  position: fixed;\n  padding: 1%;\n  bottom: 0;\n  z-index: 2;\n  width: 100%;\n  height: 5%;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  background-color: #ffffff; }\n  footer img {\n    width: 20px; }\n\n.tech {\n  font-size: 12px;\n  background-color: gray;\n  color: white;\n  margin-top: 5px;\n  margin-bottom: 10px; }\n\n.tagline {\n  width: 70%;\n  margin-left: 13%;\n  font-size: 20px; }\n\n.mobile-tag {\n  font-size: 26px; }\n\n.story {\n  height: 40px; }\n\n.font {\n  font-family: 'Raleway', sans-serif;\n  font-size: 1.5em;\n  padding-left: 2%;\n  color: #13b592; }\n\n.story-header {\n  display: flex;\n  justify-content: flex-start;\n  padding: 1%; }\n\n.section-title {\n  font-family: 'Shadows Into Light', sans-serif;\n  font-size: 28px; }\n\n.link {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center; }\n\na {\n  font-size: 12px;\n  color: black;\n  position: relative;\n  text-decoration: none; }\n\nbutton {\n  text-align: center; }\n\n.resume-button {\n  background-color: #545454;\n  border-radius: 20px;\n  color: #ffffff;\n  padding: 10px;\n  font-size: 14px;\n  transition: .3s; }\n  .resume-button:hover {\n    color: #13b592; }\n\n.resume-link {\n  text-align: right;\n  margin-right: 15%;\n  margin-bottom: 2%; }\n\n.card-link {\n  padding: 6px; }\n  .card-link:hover {\n    transition: .5s;\n    color: #08c474; }\n\n.card-flex-container {\n  width: 100%;\n  padding-bottom: 1px; }\n\n.card {\n  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);\n  transition: .3s;\n  border-radius: 5px;\n  background-color: #ffffff;\n  margin: 0 auto 5%;\n  width: 85%; }\n\n.card:hover {\n  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.2); }\n\n.full {\n  margin-top: 30%; }\n\n.screenshot {\n  width: 80%;\n  margin-left: 10%;\n  margin-top: 5%;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 5px; }\n\n.card-text {\n  display: block;\n  width: 90%;\n  margin: 5% auto; }\n\n.project-card-container {\n  padding-bottom: 10%;\n  margin-top: 30%;\n  display: flex;\n  flex-wrap: wrap; }\n\n.header-container {\n  width: 100%;\n  position: fixed;\n  z-index: 3;\n  top: 0px;\n  background-color: #ffffff;\n  border-bottom: .5px inset gray;\n  padding-top: 2%; }\n\n.link-footer {\n  margin-bottom: 40px; }\n\n.responsive-menu {\n  display: none; }\n\n.expand {\n  display: block !important; }\n\n.nav {\n  font-size: 14px; }\n  .nav:hover {\n    color: #13b592;\n    transition: .5s; }\n\n.navLi {\n  list-style: none;\n  display: inline;\n  background-color: #ffffff;\n  padding: 10px; }\n\n@media screen and (min-width: 400px) {\n  .header-container {\n    display: flex;\n    justify-content: space-around;\n    align-items: center; }\n  .project-card-container {\n    margin-top: 15%; } }\n\n@media screen and (min-width: 600px) {\n  h1 {\n    font-size: 3em; }\n  h3 {\n    font-size: 42px; }\n  h4 {\n    font-size: 18px; }\n  .card-flex-container {\n    display: flex;\n    justify-content: center; }\n  .card-text {\n    display: block;\n    width: 50%; }\n  .full {\n    width: 80%;\n    margin-top: 20%; }\n  .screenshot {\n    height: 50%;\n    width: 40%;\n    border: 1px solid rgba(0, 0, 0, 0.2);\n    border-radius: 5px;\n    margin: 5% 0% 4% 4%; }\n  .mobile-tag {\n    font-size: 34px; }\n  .tagline {\n    font-size: 26px; }\n  .nav {\n    font-size: 20px; }\n  .resume-button {\n    font-size: 18px; }\n  .right-side-header {\n    width: 50%; } }\n\n@media screen and (min-width: 800px) {\n  .card {\n    width: 40%; }\n  .full {\n    width: 80%; }\n  .project-card-container {\n    margin-top: 15%; }\n  .header-container {\n    padding: 2%; }\n  .right-side-header {\n    width: 40%; }\n  .navLi {\n    font-size: 36px; } }\n\n@media screen and (min-width: 1300px) {\n  a {\n    font-size: 20px; }\n  p {\n    font-size: 24px; }\n  li {\n    font-size: 16px; }\n  .project-card-container {\n    margin-top: 15%; }\n  .right-side-header {\n    width: 25%; } }\n", ""]);
 
 	// exports
 
