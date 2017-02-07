@@ -53,7 +53,7 @@ class Resume extends React.Component {
 
           <h3>Turing School of Software & Design</h3>
           <div className='experience-header'>
-            <h4>Front End Developer</h4>
+            <h4>Front End Developer, Student</h4>
             <h4>2016 - Present</h4>
           </div>
 
