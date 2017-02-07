@@ -10,6 +10,9 @@
 	.resume {
 	  margin-top: 5%;
 	}
+	.full {
+		margin-top: 15%;
+	}
 }
 
 @media screen and (min-width: 600px) {
@@ -85,6 +88,9 @@
 }
 
 @media screen and (min-width: 1300px) {
+	h4 {
+		font-size: 26px;
+	}
 	a {
 		font-size: 20px;
 	}
@@ -102,5 +108,8 @@
 	}
 	.resume {
 	  margin-top: 5%;
+	}
+	.experience, .volunteer p {
+	  font-size: 24px;
 	}
 }
