@@ -8188,13 +8188,13 @@
 
 	var _About2 = _interopRequireDefault(_About);
 
-	var _Resume = __webpack_require__(391);
-
-	var _Resume2 = _interopRequireDefault(_Resume);
-
 	var _Header = __webpack_require__(330);
 
 	var _Header2 = _interopRequireDefault(_Header);
+
+	var _Footer = __webpack_require__(386);
+
+	var _Footer2 = _interopRequireDefault(_Footer);
 
 	__webpack_require__(392);
 
@@ -8214,7 +8214,8 @@
 	        { path: '/', component: _Header2.default },
 	        React.createElement(_reactRouter.IndexRoute, { component: _Portfolio2.default }),
 	        React.createElement(_reactRouter.Route, { path: 'about', component: _About2.default })
-	    )
+	    ),
+	    React.createElement(_reactRouter.Route, { path: '/', component: _Footer2.default })
 	), document.querySelector('.application'));
 
 /***/ },
@@ -12199,7 +12200,9 @@
 	                { className: 'navLi' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { to: '/', className: 'nav' },
+	                  { to: '/',
+	                    className: 'nav',
+	                    activeClassName: 'active' },
 	                  'Featured Work'
 	                )
 	              ),
@@ -12208,7 +12211,9 @@
 	                { className: 'navLi' },
 	                _react2.default.createElement(
 	                  _reactRouter.Link,
-	                  { to: '/about', className: 'nav' },
+	                  { to: '/about',
+	                    className: 'nav',
+	                    activeClassName: 'active' },
 	                  'About'
 	                )
 	              )
@@ -17346,7 +17351,7 @@
 	  id: 2,
 	  imgLink: './lib/styles/images/keith-roberts.png',
 	  title: 'Keith Roberts Photography',
-	  description: 'A smooth responsive design intended to captivate the user and keep them on the site.  The client wanted a site to showcase work, and attract and convert new clients for either fine art or commercial work.  Design choices include subtle transitions, large images, sparse text, filtering capability, and plenty of whitespace.',
+	  description: 'A smooth responsive design intended to captivate users and keep them on the site.  The client wanted a site to showcase work, and attract and convert new clients for either fine art or commercial work.  Design choices include subtle transitions, large images, sparse text, filtering capability, and plenty of whitespace.',
 	  techStack: ['JavaScript', 'React', 'Sass'],
 	  codeLink: 'https://github.com/maiastone/keith-roberts',
 	  liveLink: ''
@@ -17485,7 +17490,430 @@
 	  _createClass(Resume, [{
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', null);
+	      return _react2.default.createElement(
+	        'div',
+	        { className: 'full resume card' },
+	        _react2.default.createElement(
+	          'header',
+	          { className: 'resume-header' },
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'Maia Stone'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Front End Developer'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'contact-info' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'resume-section-title' },
+	            'Skills'
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Languages & Frameworks'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'HTML5'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'CSS3'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'JavaScript'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'jQuery'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'React'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Redux'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Ember'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Tools & Workflow'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Webpack'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Github'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Sketch'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'TDD'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Enzyme'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Jest'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Mocha'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Chai'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h4',
+	            null,
+	            'Database & Other'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Firebase'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Node'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Express'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'SQL'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Knex'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'JSON Web Tokens'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'WebSockets'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'experience' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'resume-section-title' },
+	            'Experience'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Turing School of Software & Design'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Front End Developer, Student'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2016 - Present'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'MindSpark, Inc.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Founder, Executive Director'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2011 - Present'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Developed 38 programs to serve over 1,000 youth, in six schools and four libraries, over five years'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Engage and energize volunteers, board members, event committees, alumni, partnering organizations, and funders'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'MSW Financial Partners'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Controller'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2011 - Present'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Maintain QuickBooks and financial statements for rental properties, commission income and expenses'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Manage FINRA and SEC compliance'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Tax Analyst & Consultant'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Great-West Life & Annuity Insurance Company'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2010 - 2011'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Preparation of quarterly tax provisions, tax basis balance sheets, deferred tax roll-forward, current tax payable account validation, and annual returns.'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Deloitte Tax LLP'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2009 - 2010'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Preparation of tax returns for individuals, trusts, gift and estate tax returns, partnerships, and foundations.'
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Hospitality Managment, Event Planning & Production'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'More than a decade of progressive hospitality experience highlighted by experience with Disney World, Hyatt, and Marriott'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Denver Startup Week, Basecamp'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2014'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Basecamp was host to 6,000 attendees, 40 separate events'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'STEMosphere, Share Fair'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2013'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'An educational and professional developement exhibition with 5,000 attendees, 40 hands-on exhibitors'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'volunteer' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'resume-section-title' },
+	            'Volunteer'
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            null,
+	            'Over 10 years of volunteer service on boards, grant making teams, event-planning teams, and fundraising committees.  '
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'section',
+	          { className: 'education' },
+	          _react2.default.createElement(
+	            'h2',
+	            { className: 'resume-section-title' },
+	            'Education & Certification'
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'Master of Taxation'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'University of Denver'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'MBA - Real Estate'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'University of Denver'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'BA - Photography'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'University of New Mexico'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'div',
+	            { className: 'experience-header' },
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              'CPA'
+	            ),
+	            _react2.default.createElement(
+	              'h4',
+	              null,
+	              '2011'
+	            )
+	          )
+	        )
+	      );
 	    }
 	  }]);
 
@@ -17529,7 +17957,7 @@
 
 
 	// module
-	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: 'Roboto', sans-serif;\n  color: #545454;\n  background-color: #f6f6f6; }\n\nh1 {\n  font-family: 'Cinzel Decorative', cursive;\n  font-size: 2.5em;\n  margin-left: 10px;\n  color: #13b592; }\n\nh2 {\n  font-size: 30px;\n  padding: 3%;\n  text-align: center;\n  background-color: #545454;\n  color: #ffffff;\n  border-radius: 5px 5px 0 0; }\n\nh3 {\n  font-size: 26px;\n  padding: 2%; }\n\nh4 {\n  font-size: 28px;\n  color: #13b592; }\n\nh5 {\n  font-size: 16px;\n  padding-left: 25%; }\n\np {\n  font-size: 18px;\n  line-height: 1.2em;\n  padding: 2%; }\n\nspan {\n  font-weight: bold;\n  color: #13b592; }\n\nul {\n  display: flex;\n  justify-content: center; }\n\nli {\n  list-style: none;\n  display: inline;\n  padding: 5% 6%; }\n\nul li img {\n  width: 50px;\n  height: 50px;\n  border-radius: 5px; }\n\nfooter {\n  position: fixed;\n  padding: 1%;\n  bottom: 0;\n  z-index: 2;\n  width: 100%;\n  height: 5%;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  background-color: #ffffff; }\n  footer img {\n    width: 20px; }\n\n.tech {\n  font-size: 12px;\n  background-color: gray;\n  color: white;\n  margin-top: 5px;\n  margin-bottom: 10px; }\n\n.tagline {\n  width: 70%;\n  margin-left: 13%;\n  font-size: 20px; }\n\n.mobile-tag {\n  font-size: 26px; }\n\n.story {\n  height: 40px; }\n\n.font {\n  font-family: 'Raleway', sans-serif;\n  font-size: 1.5em;\n  padding-left: 2%;\n  color: #13b592; }\n\n.story-header {\n  display: flex;\n  justify-content: flex-start;\n  padding: 1%; }\n\n.section-title {\n  font-family: 'Shadows Into Light', sans-serif;\n  font-size: 28px; }\n\n.link {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center; }\n\na {\n  font-size: 12px;\n  color: black;\n  position: relative;\n  text-decoration: none; }\n\nbutton {\n  text-align: center; }\n\n.resume-button {\n  background-color: #545454;\n  border-radius: 20px;\n  color: #ffffff;\n  padding: 10px;\n  font-size: 14px;\n  transition: .3s; }\n  .resume-button:hover {\n    color: #13b592; }\n\n.resume-link {\n  text-align: right;\n  margin-right: 15%;\n  margin-bottom: 2%; }\n\n.card-link {\n  padding: 6px; }\n  .card-link:hover {\n    transition: .5s;\n    color: #08c474; }\n\n.card-flex-container {\n  width: 100%;\n  padding-bottom: 1px; }\n\n.card {\n  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);\n  transition: .3s;\n  border-radius: 5px;\n  background-color: #ffffff;\n  margin: 0 auto 5%;\n  width: 85%; }\n\n.card:hover {\n  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.2); }\n\n.full {\n  margin-top: 30%; }\n\n.screenshot {\n  width: 80%;\n  margin-left: 10%;\n  margin-top: 5%;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 5px; }\n\n.card-text {\n  display: block;\n  width: 90%;\n  margin: 5% auto; }\n\n.project-card-container {\n  padding-bottom: 10%;\n  margin-top: 30%;\n  display: flex;\n  flex-wrap: wrap; }\n\n.header-container {\n  width: 100%;\n  position: fixed;\n  z-index: 3;\n  top: 0px;\n  background-color: #ffffff;\n  border-bottom: .5px inset gray;\n  padding-top: 2%; }\n\n.link-footer {\n  margin-bottom: 40px; }\n\n.responsive-menu {\n  display: none; }\n\n.expand {\n  display: block !important; }\n\n.nav {\n  font-size: 14px; }\n  .nav:hover {\n    color: #13b592;\n    transition: .5s; }\n\n.navLi {\n  list-style: none;\n  display: inline;\n  background-color: #ffffff;\n  padding: 10px; }\n\n@media screen and (min-width: 400px) {\n  .header-container {\n    display: flex;\n    justify-content: space-around;\n    align-items: center; }\n  .project-card-container {\n    margin-top: 15%; } }\n\n@media screen and (min-width: 600px) {\n  h1 {\n    font-size: 3em; }\n  h3 {\n    font-size: 42px; }\n  h4 {\n    font-size: 18px; }\n  .card-flex-container {\n    display: flex;\n    justify-content: center; }\n  .card-text {\n    display: block;\n    width: 50%; }\n  .full {\n    width: 80%;\n    margin-top: 20%; }\n  .screenshot {\n    height: 50%;\n    width: 40%;\n    border: 1px solid rgba(0, 0, 0, 0.2);\n    border-radius: 5px;\n    margin: 5% 0% 4% 4%; }\n  .mobile-tag {\n    font-size: 34px; }\n  .tagline {\n    font-size: 26px; }\n  .nav {\n    font-size: 20px; }\n  .resume-button {\n    font-size: 18px; }\n  .right-side-header {\n    width: 50%; } }\n\n@media screen and (min-width: 800px) {\n  .card {\n    width: 40%; }\n  .full {\n    width: 80%; }\n  .project-card-container {\n    margin-top: 15%; }\n  .header-container {\n    padding: 2%; }\n  .right-side-header {\n    width: 40%; }\n  .navLi {\n    font-size: 36px; } }\n\n@media screen and (min-width: 1300px) {\n  a {\n    font-size: 20px; }\n  p {\n    font-size: 24px; }\n  li {\n    font-size: 16px; }\n  .project-card-container {\n    margin-top: 15%; }\n  .right-side-header {\n    width: 25%; } }\n", ""]);
+	exports.push([module.id, "/* http://meyerweb.com/eric/tools/css/reset/\n   v2.0 | 20110126\n   License: none (public domain)\n*/\nhtml, body, div, span, applet, object, iframe,\nh1, h2, h3, h4, h5, h6, p, blockquote, pre,\na, abbr, acronym, address, big, cite, code,\ndel, dfn, em, img, ins, kbd, q, s, samp,\nsmall, strike, strong, sub, sup, tt, var,\nb, u, i, center,\ndl, dt, dd, ol, ul, li,\nfieldset, form, label, legend,\ntable, caption, tbody, tfoot, thead, tr, th, td,\narticle, aside, canvas, details, embed,\nfigure, figcaption, footer, header, hgroup,\nmenu, nav, output, ruby, section, summary,\ntime, mark, audio, video {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline; }\n\n/* HTML5 display-role reset for older browsers */\narticle, aside, details, figcaption, figure,\nfooter, header, hgroup, menu, nav, section {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol, ul {\n  list-style: none; }\n\nblockquote, q {\n  quotes: none; }\n\nblockquote:before, blockquote:after,\nq:before, q:after {\n  content: '';\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\nbody {\n  font-family: 'Roboto', sans-serif;\n  color: #545454;\n  background-color: #f6f6f6; }\n\nh1 {\n  font-family: 'Cinzel Decorative', cursive;\n  font-size: 2.5em;\n  margin-left: 10px;\n  color: #13b592; }\n\nh2 {\n  font-size: 30px;\n  padding: 3%;\n  text-align: center;\n  background-color: #545454;\n  color: #ffffff;\n  border-radius: 5px 5px 0 0; }\n\nh4 {\n  color: #13b592;\n  font-size: 18px; }\n\nh5 {\n  font-size: 16px;\n  padding-left: 25%; }\n\np {\n  font-size: 18px;\n  line-height: 1.2em;\n  padding: 2%; }\n\nspan {\n  font-weight: bold;\n  color: #13b592; }\n\nul {\n  display: flex;\n  justify-content: center; }\n\nli {\n  list-style: none;\n  display: inline;\n  padding: 5% 6%; }\n\nul li img {\n  width: 50px;\n  height: 50px;\n  border-radius: 5px; }\n\nfooter {\n  position: fixed;\n  padding: 1%;\n  bottom: 0;\n  z-index: 2;\n  width: 100%;\n  height: 5%;\n  display: flex;\n  justify-content: space-around;\n  align-items: center;\n  background-color: #ffffff; }\n  footer img {\n    width: 20px; }\n\n.tech {\n  font-size: 12px;\n  background-color: gray;\n  color: white;\n  margin-top: 5px;\n  margin-bottom: 10px; }\n\n.tagline {\n  width: 70%;\n  margin-left: 13%;\n  font-size: 20px; }\n\n.mobile-tag {\n  font-size: 26px; }\n\n.story {\n  height: 40px; }\n\n.font {\n  font-family: 'Raleway', sans-serif;\n  font-size: 1.5em;\n  padding-left: 2%;\n  color: #13b592; }\n\n.story-header {\n  display: flex;\n  justify-content: flex-start;\n  padding: 1%; }\n\n.section-title {\n  font-family: 'Shadows Into Light', sans-serif;\n  font-size: 28px; }\n\n.link {\n  display: flex;\n  flex-wrap: wrap;\n  justify-content: center; }\n\na {\n  font-size: 14px;\n  color: black;\n  position: relative;\n  text-decoration: none; }\n\nbutton {\n  text-align: center; }\n\n.resume-button {\n  background-color: #545454;\n  border-radius: 20px;\n  color: #ffffff;\n  padding: 10px;\n  font-size: 14px;\n  transition: .3s; }\n  .resume-button:hover {\n    color: #13b592; }\n\n.resume-link {\n  text-align: right;\n  margin-right: 15%;\n  margin-bottom: 2%; }\n\n.card-link {\n  padding: 6px; }\n  .card-link:hover {\n    transition: .5s;\n    color: #08c474; }\n\n.card-flex-container {\n  width: 100%;\n  padding-bottom: 1px; }\n\n.card {\n  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);\n  transition: .3s;\n  border-radius: 5px;\n  background-color: #ffffff;\n  margin: 0 auto 5%;\n  width: 85%; }\n\n.card:hover {\n  box-shadow: 3px 3px 6px 2px rgba(0, 0, 0, 0.2); }\n\n.full {\n  margin-top: 30%; }\n\n.screenshot {\n  width: 80%;\n  margin-left: 10%;\n  margin-top: 5%;\n  border: 1px solid rgba(0, 0, 0, 0.2);\n  border-radius: 5px; }\n\n.card-text {\n  display: block;\n  width: 90%;\n  margin: 5% auto; }\n\n.project-card-container {\n  padding-bottom: 10%;\n  margin-top: 30%;\n  display: flex;\n  flex-wrap: wrap; }\n\n.header-container {\n  width: 100%;\n  position: fixed;\n  z-index: 3;\n  top: 0px;\n  background-color: #ffffff;\n  border-bottom: .5px inset gray;\n  padding-top: 2%; }\n\n.link-footer {\n  margin-bottom: 40px; }\n\n.responsive-menu {\n  display: none; }\n\n.expand {\n  display: block !important; }\n\n.nav {\n  font-size: 14px; }\n  .nav:hover {\n    color: #13b592;\n    transition: .5s; }\n\n.navLi {\n  list-style: none;\n  display: inline;\n  background-color: #ffffff;\n  padding: 10px; }\n\n.resume {\n  margin-top: 5%;\n  padding: 3%;\n  background-color: black;\n  color: white; }\n  .resume ul {\n    justify-content: flex-start; }\n  .resume li {\n    padding: 2%; }\n\n.resume-header {\n  text-align: right;\n  font-spacing: extended; }\n  .resume-header p {\n    text-transform: uppercase; }\n\n.contact-info, .experience, .volunteer, .education {\n  background-color: white;\n  color: black;\n  margin-top: 10px; }\n\n.resume-section-title {\n  border-radius: 0px;\n  padding: 1%; }\n\nh3 {\n  font-size: 22px;\n  padding: 2%;\n  text-transform: uppercase; }\n\nh4 {\n  padding: 1% 2%; }\n\n.experience-header {\n  display: flex;\n  justify-content: space-between; }\n\n.experience, .volunteer p {\n  font-size: 16px; }\n\n@media screen and (min-width: 400px) {\n  .header-container {\n    display: flex;\n    justify-content: space-around;\n    align-items: center; }\n  .project-card-container {\n    margin-top: 15%; }\n  .resume {\n    margin-top: 5%; } }\n\n@media screen and (min-width: 600px) {\n  h1 {\n    font-size: 3em; }\n  h4 {\n    font-size: 18px; }\n  .card-flex-container {\n    display: flex;\n    justify-content: center; }\n  .card-text {\n    display: block;\n    width: 50%; }\n  .full {\n    width: 80%;\n    margin-top: 15%; }\n  .screenshot {\n    height: 50%;\n    width: 40%;\n    border: 1px solid rgba(0, 0, 0, 0.2);\n    border-radius: 5px;\n    margin: 5% 0% 4% 4%; }\n  .mobile-tag {\n    font-size: 34px; }\n  .tagline {\n    font-size: 26px; }\n  .nav {\n    font-size: 20px; }\n  .resume-button {\n    font-size: 18px; }\n  .right-side-header {\n    width: 50%; }\n  .resume {\n    margin-top: 5%; } }\n\n@media screen and (min-width: 800px) {\n  .card {\n    width: 40%; }\n  .full {\n    width: 80%; }\n  .project-card-container {\n    margin-top: 15%; }\n  .header-container {\n    padding: 2%; }\n  .right-side-header {\n    width: 40%; }\n  .nav {\n    font-size: 28px; }\n  .navLi {\n    font-size: 36px; }\n  .resume {\n    margin-top: 5%; } }\n\n@media screen and (min-width: 1300px) {\n  a {\n    font-size: 20px; }\n  p {\n    font-size: 24px; }\n  li {\n    font-size: 16px; }\n  .project-card-container {\n    margin-top: 15%; }\n  .right-side-header {\n    width: 25%; }\n  .resume {\n    margin-top: 5%; } }\n", ""]);
 
 	// exports
 
