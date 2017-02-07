@@ -2,6 +2,7 @@
 	.header-container {
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 	}
 	.project-card-container {
 		margin-top: 15%;
@@ -61,13 +62,16 @@
 		width: 80%;
 	}
 	.project-card-container {
-		margin-top: 10%;
+		margin-top: 15%;
 	}
 	.header-container {
 		padding: 2%;
 	}
 	.right-side-header {
 		width: 40%;
+	}
+	.navLi {
+		font-size: 36px;
 	}
 }
 
