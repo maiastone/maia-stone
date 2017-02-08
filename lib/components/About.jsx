@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './Header.jsx';
 import Resume from './Resume.jsx';
+import Footer from './Footer.jsx';
 import { Link } from 'react-router';
 
 
@@ -19,6 +20,7 @@ const About = () => {
           </p>
       </section>
       <Resume />
+      <Footer />
     </div>
   );
 };
