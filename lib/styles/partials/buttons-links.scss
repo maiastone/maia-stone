@@ -28,9 +28,10 @@ button {
 }
 
 .card-link {
+	color: #109D7F;
 	padding: 6px;
 	&:hover {
 		transition: .5s;
-		color: darken(#9dfbd3, 40%);
+		color: darken(#109D7F, 10%);
 	}
 }

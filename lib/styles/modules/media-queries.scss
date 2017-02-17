@@ -1,7 +1,7 @@
 @media screen and (min-width: 400px) {
 	.header-container {
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
 	}
 	.project-card-container {
@@ -12,6 +12,9 @@
 	}
 	.full {
 		margin-top: 15%;
+	}
+	.right-side-header {
+		margin-right: 2%;
 	}
 }
 
@@ -49,6 +52,9 @@
 	}
 	.nav {
 		font-size: 20px;
+	}
+	.navLi {
+		margin-left: 2%;
 	}
 	.resume-button {
 		font-size: 18px;
