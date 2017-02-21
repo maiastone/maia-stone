@@ -25,7 +25,6 @@ class Resume extends React.Component {
           </ul>
           <h4>Tools & Workflow</h4>
           <ul>
-            <li>WordPress</li>
             <li>Webpack</li>
             <li>Github</li>
             <li>Sketch</li>
